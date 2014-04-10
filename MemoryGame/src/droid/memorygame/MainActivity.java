@@ -19,5 +19,13 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+	public void animacioImg(View v){
+		
+		
+		Animation rotacion = AnimationUtils.loadAnimation(this, R.anim.rotate_img);
+        
+        
+        img.startAnimation(rotacion);
+	}
 
 }
